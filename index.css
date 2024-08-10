@@ -3,15 +3,15 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background: #FFF;
     font-family: "Smythe", system-ui;
 }
 
 .container {
     max-width: 600px;
-    margin: 0 auto 250px;
+    margin: 0px auto 250px;
 }
 
 #header-text {
@@ -20,12 +20,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
     color: #FFF;
 }
 
 h1 {
-    margin: 0 0 20px 45px;
+    margin: 0px 0px 20px 45px;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -33,7 +32,7 @@ h1 {
 }
 
 h2 {
-    margin: 0 0 0 45px;
+    margin: 0px 0px 0px 45px;
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
@@ -41,16 +40,16 @@ h2 {
 }
 
 h3 {
-    margin: 0;
+    margin: 0px;
     color: #000;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16.8px;
+    line-height: 17px;
 }
 
 p {
-    margin: 8px 0;
+    margin: 8px 0px;
     color: #8B8B8B;
     font-size: 16px;
     font-style: normal;
@@ -59,7 +58,7 @@ p {
 }
 
 h4 {
-    margin: 0;
+    margin: 0px;
     color: #000;
     font-size: 20px;
     font-style: normal;
@@ -69,13 +68,19 @@ h4 {
 
 #header {
     background: url("header.jfif") lightgray 65% 65% / cover no-repeat;
+    max-width: 600px;
     height: 167px;
     display: flex;
     align-items: center;
 }
 
+#container-inner{
+    max-width: 600px;
+    padding: 0px 10px;
+}
+
 .menu-item {
-    width: 508px;
+    max-width: 508px;
     height: 140px;
     margin: 50px auto;
     display: flex;
@@ -116,14 +121,14 @@ h4 {
 }
 
 hr {
-    width: 504px;
+    max-width: 504px;
     height: 1px;
     background: #D2D2D2;
     border: 0px;
 }
 
 #order-section {
-    width: 508px;
+    max-width: 508px;
     margin: 0px auto;
 }
 
@@ -158,7 +163,7 @@ hr {
 }
 
 #order-hr {
-    width: 504px;
+    max-width: 504px;
     height: 2px;
     background: #393333;
     margin-top: 30px;
@@ -179,7 +184,7 @@ hr {
 
 #complete-order-btn {
     display: flex;
-    width: 508px;
+    max-width: 508px;
     padding: 18px 175px 18px 194px;
     justify-content: flex-end;
     align-items: center;
@@ -203,7 +208,7 @@ hr {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 525px;
+    max-width: 525px;
     height: 545px;
     border-radius: 4px;
     filter: drop-shadow(6px 6px 255px rgba(0, 0, 0, 0.50));
@@ -232,7 +237,6 @@ input {
     width: 475px;
     height: 72px;
     padding: 25px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: 1.297px solid #757575;
     color: #757575;
@@ -264,10 +268,9 @@ input {
 }
 
 #order-complete-box {
-    width: 504px;
+    max-width: 504px;
     height: 120px;
     margin: 50px auto 200px;
-    flex-shrink: 0;
     border-radius: 3px;
     background: #ECFDF5;
     display: flex;
