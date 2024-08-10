@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Family -->
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div id="container" class="container">
+                <section id="header">
+                    <section id="header-text">
+                        <h1>Jimmy’s Diner</h1>
+                        <h2>The best burgers and pizzas in town.</h2>
+                    </section>
+                </section>
+                <section id="menu-section"></section>
+                <section id="order-section"></section>
+            </div> <!-- container closed -->
+        </main>
+        <div id="modal" class="modal">
+            <div id="modal-title">Enter card details</div>
+            <form id="payment-form">
+                <div id="modal-inputs">
+                    <input type="text" name="fullName" placeholder="Enter your name" required>
+                    <input type="tel" maxlength="19" name="cardNumber" placeholder="Enter card number" required>
+                    <input type="tel" maxlength="4" name="cvv" placeholder="Enter CVV" required>
+                </div>
+                <div id="modal-pay-btn-box">
+                    <button type="submit" id="pay-btn">Pay</button>
+                </div>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

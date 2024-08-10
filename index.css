@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    font-family: "Smythe", system-ui;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto 250px;
+}
+
+#header-text {
+    max-width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+h1 {
+    margin: 0 0 20px 45px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h2 {
+    margin: 0 0 0 45px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+h3 {
+    margin: 0;
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+p {
+    margin: 8px 0;
+    color: #8B8B8B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h4 {
+    margin: 0;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#header {
+    background: url("header.jfif") lightgray 65% 65% / cover no-repeat;
+    height: 167px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    width: 508px;
+    height: 140px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+.add-btn-box {
+    margin-left: auto; 
+}
+
+.add-btn {
+    background: transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    color: #3C3C3C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.item {
+    margin-left: 31px;
+}
+
+.item-graphic {
+    width: 75px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 80px;
+    opacity: 0.72;
+}
+
+hr {
+    width: 504px;
+    height: 1px;
+    background: #D2D2D2;
+    border: 0px;
+}
+
+#order-section {
+    width: 508px;
+    margin: 0px auto;
+}
+
+#your-order {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0px;
+}
+
+.order-item {
+    display: flex;
+    margin: 15px 0;
+}
+
+.rmv-btn-box {
+    margin-left: 10px;
+}
+
+.rmv-btn {
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background: transparent;
+    border: none;
+}
+
+.order-item-price {
+    margin-left: auto;
+}
+
+#order-hr {
+    width: 504px;
+    height: 2px;
+    background: #393333;
+    margin-top: 30px;
+}
+
+#total-price {
+    display: flex;
+    margin: 15px auto;
+}
+
+#total-price-sum {
+    margin-left: auto;
+}
+
+#order-btn {
+    margin: 55px auto;
+}
+
+#complete-order-btn {
+    display: flex;
+    width: 508px;
+    padding: 18px 175px 18px 194px;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color:#FFF;
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 525px;
+    height: 545px;
+    border-radius: 4px;
+    filter: drop-shadow(6px 6px 255px rgba(0, 0, 0, 0.50));
+    background: #FFF;
+}
+
+#modal-title {
+    text-align: center;
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 50px auto;
+}
+
+#modal-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+input {
+    width: 475px;
+    height: 72px;
+    padding: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1.297px solid #757575;
+    color: #757575;
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#modal-pay-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+#pay-btn {
+    width: 475px;
+    height: 72px;
+    border-radius: 4px;
+    background: #16DB99;
+    margin: 45px auto 30px;
+    border: none;
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+#order-complete-box {
+    width: 504px;
+    height: 120px;
+    margin: 50px auto 200px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #ECFDF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order-complete-msg {
+    margin: 0;
+    color: #065F46;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+}
+
