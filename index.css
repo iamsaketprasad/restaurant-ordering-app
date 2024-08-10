@@ -10,7 +10,7 @@ html, body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 360px;
     margin: 0px auto 250px;
 }
 
@@ -69,14 +69,14 @@ h4 {
 
 #header {
     background: url("header.jfif") lightgray 70% 70% / cover no-repeat;
-    max-width: 600px;
+    max-width: 360px;
     height: 157px;
     display: flex;
     align-items: center;
 }
 
 #container-inner{
-    max-width: 600px;
+    max-width: 360px;
     padding: 0px 10px;
 }
 
